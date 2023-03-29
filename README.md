@@ -1,179 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Responsive Layout</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-  <link href='css/master.css' rel='stylesheet' type='text/css'>
-  <style> 
-    *{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-  }
-  
-  body{
-    font-family: 'Lato', sans-serif;  
-  }
-  
-  .row{
-    width: 100%;
-  }
-  
-  .menu-title{
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .container{
-   position: relative;
-   top:60px;
-   margin: 15px; 
-  }
-  
-  .item{
-    position: relative;
-    top: 0;
-    background-color:#999999;
-    margin: 15px;
-    padding: 25px;
-    border: 3px solid #000;
-  }
-  
-  .item p{
-    margin-top: 18px;
-    text-align: justify;
-    font-size:100%;
-  }
-  
-  .item-title{
-    position: absolute;
-    top:0;
-    right: 0px;
-    background: green; 
-    padding: 6px 90px;
-    border-left: 2px solid #000;
-    border-bottom: 2px solid #000;
-  }
-  
-  #title-one {
-    background-color: #D59898;
-  } 
-  
-  #title-two{
-    background-color: #C14543;
-  }
-  
-  #title-three{
-    background-color: #E5D198;
-  }
-  
-  /* Simple Responsive Framework. */
-  /*------ Desktop ------*/
-  @media (min-width: 992px){
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-      float: left;  
-    }
-    .col-lg-1 {
-      width: 8.33%;
-    }
-    .col-lg-2 {
-      width: 16.66%;
-    }
-    .col-lg-3 {
-      width: 25%;
-    }
-    .col-lg-4 {
-      width: 33.33%;
-    }
-    .col-lg-5 {
-      width: 41.66%;
-    }
-    .col-lg-6 {
-      width: 50%;
-    }
-    .col-lg-7 {
-      width: 58.33%;
-    }
-    .col-lg-8 {
-      width: 66.66%;
-    }
-    .col-lg-9 {
-      width: 74.99%;
-    }
-    .col-lg-10 {
-      width: 83.33%;
-    }
-    .col-lg-11 {
-      width: 91.66%;
-    }
-    .col-lg-12 {
-      width: 100%;
-    }
-  
-  }
-  
-  
-  /*------ Tablet ------*/
-  @media (min-width: 768px) and (max-width: 991px){
-    .col-lg-4 {
-      width: 50%;
-      float: left;
-    }
-    .col-lg-tablet{
-     width: 100%;
-     float: left;
-   }
-  }
-  
-  
-  /*------ Mobile ------*/
-  @media (max-width: 767px){
-    .col-lg-4{
-      width: 100%;
-      float: left;
-    }
-  }
-  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="master/css" href="master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="row">
+  <style> 
+    style.css
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.navbar{
 
-    <h1 class="menu-title">Our menu</h1>
-      <div class="col-lg-4">
-        <div class="item">
-          <div class="item-title" id="title-one">
-            <h3>Chicken</h3>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="item">
-         <div class="item-title" id="title-two">
-          <h3>Beef</h3>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-        </p>
-      </div>
+border: none;
+background-color: black;
+color: #61122F;
+}
+body{
+	background-color: #61122F;
+	color: white;
+}
+.glyphicon{
+	font-size: 30px;
+	color:#61122F; 
+}
+
+.center{
+	width: 90%;
+	background-color: grey;
+
+}
+.container
+{
+	background-color: grey;
+}
+.text-center{
+	font-size: 30px;
+}
+
+h2{
+	text-align: center;
+}
+#myNavbar ul li a {
+	color: #61122F;
+}
+.navbar-brand{
+font-size: 30px;	
+}
+    
+  </style>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" >Food, LLC</a>
     </div>
-    <div class="col-lg-4 col-lg-tablet">
-      <div class="item">
-       <div class="item-title" id="title-three">
-        <h3>Sushi</h3>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.
-      </p>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    
+      <ul class="nav navbar-nav navbar-right" >
+        <li style>
+        <a href="#" > 
+        <span class="glyphicon glyphicon-cutlery"></span> chicken</a>
+        </li>
+        <li>
+        <a href="#" >
+        <span class="glyphicon glyphicon-info-sign"></span> beef</a>
+        </li>
+        <li>
+        <a href="#">
+        <span class="glyphicon glyphicon-certificate"></span> sushi</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
+<br>
+<br>  
+<h1><p class="text-center">Our Menu</p></h1>
 
+
+<div id="main-content" class="container">
+  <div id="home-tiles" class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+            
+            <p id="chickstory">
+          <h2>Chicken</h2>
+              He heard quiet steps behind him. That didn't bode well. Who could be following him this late at night and in this deadbeat part of town? And at this particular moment, just after he pulled off the big time and was making off with the greenbacks. Was there another crook who'd had the same idea, and was now watching him and waiting for a chance to grab the fruit of his labour? Or did the steps behind him mean that one of many law officers in town was on to him and just waiting to pounce and snap those cuffs on his wrists? He nervously looked all around. Suddenly he saw the alley. Like lightning he darted off to the left and disappeared between the two warehouses almost falling over the bin lying in the middle of the pavement. He tried to nervously tap his way along in the inky darkness and suddenly stiffened: it was a dead-end, he would have to go back the way he had come. The steps got louder and louder, he saw the black outline of a figure coming around the corner. Is this the end of the line? he thought pressing himself back against the wall trying to make himself invisible in the dark, was all that planning and energy wasted? He was dripping with sweat now, cold and wet, he could smell the fear coming off his clothes. Suddenly next to him, with a barely noticeable squeak, a door swung quietly to and fro in the night's breeze. Could this be the haven he'd prayed for? Slowly he slid toward the door, pressing himself more and more into the wall, into the dark, away from his enemy. Would this door save his hide?He heard quiet steps behind him. That didn't bode well. Who could be following him this late at night and in this deadbeat part of town? And at this particular moment, just after he pulled off the big time and was making off with the greenbacks. Was there another crook who'd had the same idea, and was now watching him and waiting for a chance to grab the fruit of his labour? Or did the steps behind him mean that one of many law officers in town was on to him and just waiting to pounce and snap those cuffs on his wrists? He nervously looked all around. Suddenly he saw the alley. Like lightning he darted off to the left and disappeared between the two warehouses almost falling over the bin lying in the middle of the pavement. He tried to nervously tap his way along in the inky darkness and suddenly stiffened: it was a dead-end, he would have to go back the way he had come. The steps got louder and louder, he saw the black outline of a figure coming around the corner. Is this the end of the line? he thought pressing himself back against the wall trying to make himself invisible in the dark, was all that planning and energy wasted? He was dripping with sweat now, cold and wet, he could smell the fear coming off his clothes. Suddenly next to him, with a barely noticeable squeak, a door swung quietly to and fro in the night's breeze. Could this be the haven he'd prayed for? Slowly he slid toward the door, pressing himself more and more into the wall, into the dark, away from his enemy. Would this door save his hide?He heard quiet steps behind him. That didn't bode well. Who could be following him this late at night and in this deadbeat part of town? And at this particular moment, just after he pulled off the big time and was making off with the greenbacks. Was there another crook who'd had the same idea, and was now watching him and waiting for a chance to grab the fruit of his labour? Or did the steps behind him mean that one of many law officers in town was on to him and just waiting to pounce and snap those cuffs on his wrists? He nervously looked all around. Suddenly he saw the alley. Like lightning he darted off to the left and disappeared between the two warehouses almost falling over the bin lying in the middle of the pavement. He tried to nervously tap his way along in the inky darkness and suddenly stiffened: it was a dead-end, he would have to go back the way he had come. The steps got louder and louder, he saw the black outline of a figure coming around the corner. Is this the end of the line? he thought pressing himself back against the wall trying to make himself invisible in the dark, was all that planning and energy wasted? He was dripping with sweat now, cold and wet, he could smell the fear coming off his clothes. Suddenly next to him, with a barely noticeable squeak, a door swung quietly to and fro in the night's breeze. Could this be the haven he'd prayed for? Slowly he slid toward the door, pressing himself more and more into the wall, into the dark, away from his enemy. Would this door save his hide?He heard quiet steps behind him. That didn't bode well. Who could be following him this late at night and in this deadbeat part of town? And at this particular moment, just after he pulled off the big time and was making off with the greenbacks. Was there another crook who'd had the same idea, and was now watching him and waiting for a chance to grab the fruit of his labour? Or did the steps behind him mean that one of many law officers in town was on to him and just waiting to pounce and snap those cuffs on his wrists? He nervously looked all around. Suddenly he saw the alley. Like lightning he darted off to the left and disappeared between the two warehouses almost falling over the bin lying in the middle of the pavement. He tried to nervously tap his way along in the inky darkness and suddenly stiffened: it was a dead-end, he would have to go back the way he had come. The steps got louder and louder, he saw the black outline of a figure coming around the corner. Is this the end of the line? he thought pressing himself back against the wall trying to make himself invisible in the dark, was all that planning and energy wasted? He was dripping with sweat now, cold and wet, he could smell the fear coming off his clothes. Suddenly next to him, with a barely noticeable squeak, a door swung quietly to and fro in the night's breeze. Could this be the haven he'd prayed for? Slowly he slid toward the door, pressing himself more and more into the wall, into the dark, away from his enemy. Would this door save his hide?
+            </p>
+      </div>
+    </div>
 </div>
-</div>
+
 </body>
 </html>
